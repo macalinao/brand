@@ -39,7 +39,7 @@ fn main() -> ExitCode {
     let opts = cli().run();
 
     let result = match &opts.command {
-        Commands::Generate(args) => commands::generate::run(args.clone()),
+        Commands::Generate(args) => commands::generate::run(args),
         Commands::Init(args) => commands::init::run(args),
     };
 
