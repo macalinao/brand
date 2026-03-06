@@ -1,0 +1,13 @@
+name = "Microsoft"
+
+[theme]
+font = "Selawik-Bold.ttf"
+text-dark = "#ffffff"
+text-light = "#737373"
+
+[assets.icon]
+path = "icon.svg"
+
+[usvg]
+shape-rendering = "geometric-precision"
+image-rendering = "optimize-quality"

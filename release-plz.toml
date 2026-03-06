@@ -1,0 +1,3 @@
+[[package]]
+name = "brand"
+git_tag_name = "v{{ version }}"

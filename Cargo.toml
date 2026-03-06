@@ -1,0 +1,41 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+authors = ["Ian Macalinao <me@ianm.com>"]
+edition = "2024"
+homepage = "https://github.com/macalinao/brand"
+license = "Apache-2.0"
+repository = "https://github.com/macalinao/brand"
+
+[workspace.dependencies]
+anyhow = "1.0.102"
+oxipng = { version = "9", default-features = false, features = ["parallel"] }
+brand-usvg-options = { path = "crates/usvg-options", package = "usvg-options" }
+bpaf = { version = "0.9.23", features = ["autocomplete", "bright-color", "derive", "docgen"] }
+dialoguer = "0.12"
+resvg = "0.47.0"
+schemars = { version = "1", default-features = false, features = ["derive"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+thiserror = "2.0.18"
+toml = "1"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter"] }
+ureq = "3"
+usvg = { version = "0.47.0", default-features = false }
+
+[profile.bench]
+lto = "fat"
+codegen-units = 1
+
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+complexity = { level = "deny", priority = -1 }
+must_use_candidate = "allow"
+unwrap_used = "deny"
+std_instead_of_alloc = "deny"
+std_instead_of_core = "deny"
+cognitive_complexity = "deny"
+too_many_lines = "deny"

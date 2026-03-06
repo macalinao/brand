@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+cargo build --release
+
+for dir in examples/*/; do
+  if [ -f "$dir/brand.toml" ]; then
+    echo "=== $(basename "$dir") ==="
+    (cd "$dir" && ../../target/release/brand generate)
+    echo
+  fi
+done

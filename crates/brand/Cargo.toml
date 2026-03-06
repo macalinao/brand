@@ -1,0 +1,30 @@
+[package]
+name = "brand"
+version = "0.0.1"
+authors.workspace = true
+categories = ["command-line-utilities", "graphics"]
+edition.workspace = true
+homepage.workspace = true
+keywords = ["brand", "favicon", "icon", "svg", "logo"]
+license.workspace = true
+repository.workspace = true
+description = "Generate a brand icon set from an SVG icon, brand name, and font"
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow.workspace = true
+oxipng.workspace = true
+bpaf.workspace = true
+brand-usvg-options.workspace = true
+dialoguer.workspace = true
+resvg.workspace = true
+schemars = { workspace = true, features = ["std"] }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+toml.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+ureq.workspace = true

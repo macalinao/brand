@@ -1,0 +1,18 @@
+[package]
+name = "usvg-options"
+version = "0.0.1"
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Serializable config struct mirroring the configurable subset of usvg::Options"
+
+[lints]
+workspace = true
+
+[dependencies]
+bpaf.workspace = true
+schemars.workspace = true
+serde.workspace = true
+usvg.workspace = true

@@ -1,0 +1,17 @@
+name = "Google"
+
+[theme]
+font = "OpenSans-Bold.ttf"
+
+[assets.icon]
+path = "icon.svg"
+
+[assets.logo]
+wordmark-only = true
+
+[assets.wordmark]
+path = "wordmark.svg"
+
+[usvg]
+shape-rendering = "geometric-precision"
+image-rendering = "optimize-quality"
