@@ -11,7 +11,7 @@ repository = "https://github.com/macalinao/brand"
 
 [workspace.dependencies]
 anyhow = "1.0.102"
-oxipng = { version = "9", default-features = false, features = ["parallel"] }
+oxipng = { version = "10", default-features = false, features = ["parallel"] }
 brand-usvg-options = { path = "crates/usvg-options", package = "usvg-options" }
 bpaf = { version = "0.9.23", features = ["autocomplete", "bright-color", "derive", "docgen"] }
 dialoguer = "0.12"

@@ -634,9 +634,9 @@ checksum = "d211803b9b6b570f68772237e415a029d5a50c65d382910b879fb19d3271f94d"
 
 [[package]]
 name = "oxipng"
-version = "9.1.5"
+version = "10.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "26c613f0f566526a647c7473f6a8556dbce22c91b13485ee4b4ec7ab648e4973"
+checksum = "efc4ea5566cd49b80c4b5e8eac2167d137d2ca3007ec8976d4cd9fe8b654ba2b"
 dependencies = [
  "bitvec",
  "crossbeam-channel",
