@@ -13,7 +13,7 @@ repository = "https://github.com/macalinao/brand"
 anyhow = "1.0.102"
 oxipng = { version = "9", default-features = false, features = ["parallel"] }
 brand-usvg-options = { path = "crates/usvg-options", package = "usvg-options" }
-bpaf = { version = "0.9.23", features = ["autocomplete", "bright-color", "derive", "docgen"] }
+bpaf = { version = "0.9.24", features = ["autocomplete", "bright-color", "derive", "docgen"] }
 dialoguer = "0.12"
 resvg = "0.47.0"
 schemars = { version = "1", default-features = false, features = ["derive"] }
